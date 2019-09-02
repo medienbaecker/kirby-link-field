@@ -1,0 +1,45 @@
+type: group
+fields:
+  link:
+    label:
+      de: Link-Typ
+      en: Link Type
+    type: select
+    empty: false
+    default: int
+    width: 1/3
+    options:
+      int:
+        de: Interner Link
+        en: Internal link
+      ext:
+        de: Externer Link
+        en: External link
+      email:
+        de: E-Mail Adresse
+        en: Email address
+  int:
+    label:
+      de: Interner Link
+      en: Internal link
+    type: pages
+    multiple: false
+    width: 2/3
+    when:
+      link: int
+  ext:
+    label:
+      de: Externer Link
+      en: External link
+    type: url
+    width: 2/3
+    when:
+      link: ext
+  email:
+     label:
+      de: E-Mail Adresse
+      en: Email address
+    type: email
+    width: 2/3
+    when:
+      link: email

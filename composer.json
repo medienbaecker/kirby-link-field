@@ -2,6 +2,7 @@
   "name": "medienbaecker/kirby-link-field",
   "description": "Kirby Link Field",
   "type": "kirby-plugin",
+  "version": "2.0",
   "license": "MIT",
   "authors": [
     {
