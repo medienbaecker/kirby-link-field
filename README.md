@@ -1,4 +1,4 @@
-**Discontinued. Please use https://github.com/hdodov/kirby-link-field.**
+**Discontinued. Please use https://github.com/OblikStudio/kirby-link-field.**
 
 # Link field for Kirby 3
 
