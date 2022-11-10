@@ -23,7 +23,9 @@ There's a convenient `->toHref()` method you can use to automatically return the
 ```
 
 Email address: `mailto:mail@example.com`
+
 Page link: `https://www.example.com/products/lorem-ipsum`
+
 Url: `https://www.example.com`
 
 ## Installation
