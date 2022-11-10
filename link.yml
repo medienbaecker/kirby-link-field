@@ -3,7 +3,12 @@ empty:
   de: Kein Link
   en: No link
 fields:
-  link:
+  label:
+    label:
+      de: Label
+      en: Label
+    type: text
+  type:
     label:
       de: Link-Typ
       en: Link Type
@@ -21,16 +26,6 @@ fields:
       email:
         de: E-Mail Adresse
         en: Email address
-  info:
-    width: 2/3
-    when:
-      link: ""
-    label:
-      de: Kein Link
-      en: No link
-    text:
-      de: Bitte wählen Sie einen Link-Typ
-      en: Please choose a link type
   page:
     label:
       de: Interner Link
@@ -39,7 +34,7 @@ fields:
     multiple: false
     width: 2/3
     when:
-      link: page
+      type: page
   url:
     label:
       de: Externer Link
@@ -47,7 +42,7 @@ fields:
     type: url
     width: 2/3
     when:
-      link: url
+      type: url
   email:
      label:
       de: E-Mail Adresse
@@ -55,4 +50,4 @@ fields:
     type: email
     width: 2/3
     when:
-      link: email
+      type: email

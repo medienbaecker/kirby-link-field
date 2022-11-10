@@ -4,7 +4,7 @@ This is a link field for Kirby 3. You can conveniently insert external URLs, pag
 
 ### Preview
 
-![Preview](https://user-images.githubusercontent.com/7975568/64112439-b3109c00-cd87-11e9-8229-0b710e2fa4cc.gif)
+![Preview](https://user-images.githubusercontent.com/7975568/201041984-6d8ce3a4-9d86-4340-96d4-637aec99f816.gif)
 
 ### Blueprint
 ```yaml
@@ -17,11 +17,14 @@ fields:
 There's a convenient `->toHref()` method you can use to automatically return the correct href:
 
 ```php
-<?= $page->link()->toHref() ?>
+<?php if($linkObject = $page->link()->toObject()): ?>
+  <a href="<?= $page->link()->toHref() ?>"><?= $linkObject->label() ?></a>
+<?php endif ?>
 ```
 
-Email address: `mailto:mail@medienbaecker.com`
+Email address: `mailto:mail@example.com`
 Page link: `https://www.example.com/products/lorem-ipsum`
+Url: `https://www.example.com`
 
 ## Installation
 
