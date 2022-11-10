@@ -1,16 +1,21 @@
-type: group
+type: object
+empty:
+  de: Kein Link
+  en: No link
 fields:
   link:
     label:
       de: Link-Typ
       en: Link Type
     type: select
+    default: "page"
+    empty: false
     width: 1/3
     options:
-      int:
+      page:
         de: Interner Link
         en: Internal link
-      ext:
+      url:
         de: Externer Link
         en: External link
       email:
@@ -26,7 +31,7 @@ fields:
     text:
       de: Bitte wählen Sie einen Link-Typ
       en: Please choose a link type
-  int:
+  page:
     label:
       de: Interner Link
       en: Internal link
@@ -34,15 +39,15 @@ fields:
     multiple: false
     width: 2/3
     when:
-      link: int
-  ext:
+      link: page
+  url:
     label:
       de: Externer Link
       en: External link
     type: url
     width: 2/3
     when:
-      link: ext
+      link: url
   email:
      label:
       de: E-Mail Adresse
