@@ -1,4 +1,4 @@
-**Discontinued. Please use https://github.com/OblikStudio/kirby-link-field.**
+⚠️ This is now a core feature of Kirby 4: https://getkirby.com/releases/4.0/link-field
 
 # Link field for Kirby 3
 
